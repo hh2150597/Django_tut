@@ -1,0 +1,5 @@
+Few Questions about the admin site:
+
+1. We write some code in admin.py, and similarly, we use @admin.display in models.py. What is the difference between them, and which one is the better way to render things on the admin panel?
+
+2. Let's suppose we create a login system in our app. For storing user data in the database, should we use the admin user field, or should we use the app database?

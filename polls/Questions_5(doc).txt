@@ -1,0 +1,5 @@
+Few Questions about automated testing:
+
+1. In Flutter, testing can be broadly categorized into three types: unit testing, integration testing, and widget testing. If specific testing terminology is not used (as seen in the documentation of Django), should we still consider it as unit testing or something else?
+
+2. I started testing in Flutter, but it took a lot of time because it has a lot of logic issues. The same issues persist, and many things are going over my head. What is the solution to this?

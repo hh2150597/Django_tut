@@ -1,0 +1,5 @@
+Few Questions from tutorial 6 related to Static Files:
+
+1. By default, Django looks for static files in a path like this: "myapp/static/myapp/". Do we need to customize this path in the project, such as changing it to "myapp/static" or something similar?
+
+2. While I am familiar with normal HTML and CSS, the HTML code we write in Django seems a bit more complicated. The same goes for CSS, although it is comparatively easier to understand since it aligns with the familiar CSS structure. Could you recommend a tutorial or resource that could help me become more comfortable with Django-specific HTML and CSS?

@@ -1,0 +1,24 @@
+{% comment %} {% extends "base.html" %} {% endcomment %}
+
+{% block title %}Quiz: {{ quiz.quiz_text }}{% endblock title %}
+
+{% block content %}
+  <h1>{{ quiz.quiz_text }}</h1>
+  <p>{{ quiz.description }}</p>
+
+  <form action="{% url 'quiz:submit' quiz.id %}" method="post">
+    {% csrf_token %}
+    {% for question in questions %}
+      <h3>{{ question.question_text }}</h3>
+      <ul>
+        {% for answer_option in question.answeroption_set.all %}
+          <li>
+            <input type="radio" name="question_{{ question.id }}" id="{{ answer_option.id }}" value="{{ answer_option.id }}">
+            <label for="{{ answer_option.id }}">{{ answer_option.option_text }}</label>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endfor %}
+    <button type="submit">Submit Quiz</button>
+  </form>
+{% endblock content %}

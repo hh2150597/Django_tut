@@ -1,0 +1,9 @@
+{% comment %} {% extends "base.html" %} {% endcomment %}
+
+{% block title %}Results for {{ quiz.quiz_text }}{% endblock title %}
+
+{% block content %}
+  <h1>Results for {{ quiz.quiz_text }}</h1>
+  <p>Your score is: {{ score }}</p>
+  <p>You answered {{ score }} out of {{ quiz.questions.count }} questions correctly.</p>
+{% endblock content %}

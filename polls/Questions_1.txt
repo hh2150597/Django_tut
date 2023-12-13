@@ -1,0 +1,11 @@
+I have few questions which I want to ask:
+
+1. Why the very first project we create before the app is used to run the app? Like first we create the virtual environement and then run the project command to make project and then used the another command to create an app. So in the second stage when we create project why this project always used to run the app not the app itself.
+
+2. Why we create the virtual environement first like in the first question? We just need to install django in the windows system and run it from there why we create the another virtual environement and seperatly installed django in it and then do the further processing?
+
+3. Should I need to dig deep in the server code for now. Like the code of the project we create in the second step of the first question?
+
+4. There is quite an issue in learning the command lines interface of Django so much commands
+
+Left ones: First one is left for later

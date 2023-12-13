@@ -1,0 +1,11 @@
+I have some question:
+
+1. Every model we create represents the table in the database. Should we always need to create the model? Like we have SQLite software which helps us create the database with SQL query as well. How to use that model if we create the database like this?
+
+2. Is migration command always used to save changes made in database section or file or it also used to save other changes as well instead of database section?
+
+3. In the django shell after running the shell command to test or check the database, we used "Question.objects.all()" to get all the questions. I have seen that there are many commands we used after ".object" with dot notation like .object.filter(). What is object represents and where it's come from?
+
+4. In admin pannel, we create the only one question and there are alot of choices there as well. How the python creates that pannel and I have seen the word 'HTML input widget'. Is he used the HTML, CSS and JS to handle and create the admin page?
+
+Left one: 3rd and 4th are left for later

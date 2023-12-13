@@ -1,0 +1,12 @@
+{% comment %} {% extends "base.html" %} {% endcomment %}
+
+{% block title %}Quizzes{% endblock title %}
+
+{% block content %}
+  <h1>Quizzes</h1>
+  <ul>
+    {% for quiz in quiz_list %}
+      <li><a href="{% url 'quiz:detail' quiz.id %}">{{ quiz.quiz_text }}</a></li>
+    {% endfor %}
+  </ul>
+{% endblock content %}

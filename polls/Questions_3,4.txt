@@ -1,0 +1,16 @@
+I have some question:
+
+1. def index(request):
+    latest_question_list = Question.objects.order_by("-pub_date")[:5]
+    context = {"latest_question_list": latest_question_list}
+    return render(request, "polls/index.html", context)
+   In this code and later in all function we passed the 'request' parameters. What is that parameter, Where it comes from while running the app?
+
+2. We used the HTML file for the template but the HTML we wrote is little bit diferent from the normal HTML, why is that? And also is there any video or other good documentation about this HTML?
+
+3. <li><a href="{% url 'detail' question.id %}">{{ question.question_text }}</a></li>
+   Refering to the above code line, "url 'detail' question.id", Can you explain little bit because it's not quite understandable?
+
+4. Also we changed function to class in the fourth tutorial. Can you explain why?
+
+5. Also the function of vote in the same tutorial mentioned in Q 4. Why we don't change the vote function?

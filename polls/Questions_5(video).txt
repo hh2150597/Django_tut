@@ -1,0 +1,37 @@
+-> DNS Lookup: 
+	ham farz kare google.com  likh kar enter dabate ha lekin hamare computer ko nahi pta hota ke google.com ha kia is liye wo DNS resolver ke pas jata ha is domain ka ip address pta karne ke liye or is tarha aage se aage kam chalta ha jab tak ise ".com" domain nahi milta jab mil gye phir wo "google.com" ko dekhta ha or return karta ha ip.
+
+-> HTTP Status Code: 
+	ye ek plane text protocol ha matlab ye human readlable ha sath me iske kuch status code bhi ha jo browser ko batate ha status ke bare me ok ha ya error aaya ha ya kuch or bhi.
+
+-> Port Number: 
+	hamare pas http ki tarha ftp bhi hoti ha jo file transfer ke liye use hoti ha hamara computre dono ek sath chala sakhta ha magar dono ilag ilag programs ha server port number use karta ha request ke liye kon si process karni ha 
+(http -> 80, https -> 443) number hamae btate ha ke kon si request use ki ha computer ne ham in port number se different services ko run kar sakhte ha ek hi machine pe or inko alag alag handle kar sakhte ha. 
+
+-> Request Method: 
+	Wo chez jo different kam karne ke liye use hoti ha like GET to get the data from server POST to send the data to server PUT PATCH DELETE etc. let's see we have "infra.codedamn.com/api/posts" api if we use GET -> JSON of all posts, 
+PUT -> Create new post, DELETE -> Delete a particular post, PATCH -> Edit a post. POST is superior of all because of his body conatins anything like GET PUT DELETE PATCH.
+
+-> Request Headers:
+	hamare pas request me kuch variables hote ha like "name: value" format ke is se ham request ki information ko increase karte ha hamare pas is me sab se pehle Request Method hota ha is ke bad path(/), HTTP request respose like 1.1 or aage phir wohi wala format hota ha or ek bat ke HTTP ek TCP pr run hota ha or server ek reposnse header bhi bhejta ha based upon the requests header.
+
+-> Raw HTTP Requests Using netcat:
+	nc example.com 80 -vvv 	// Establich TCP connection with eaxmple.com at port 80 with verbose mode.
+	sfstsfwtdvf 		// Gives us an error
+
+	nc example.com 80 -vvv
+	100			// Also error
+
+	nc example.com 80 -vvv
+	GET / HTTP/1.1
+	Host: example.com	// its is requiered field while others are not
+ye hame kuch server respose de ga like respose method or isme headers bhi honge or sath me body jo html page hota ha 
+
+	nc example.com 80 -vvv
+	GET /404 HTTP/1.1
+	Host: example.com
+ye hame 404 dega instead of 200.
+
+Few Questions:
+
+1. In this video, he used netcat to send the request. I have nmap installed, which supposedly allows the use of netcat according to the documentation. However, the commands in the documentation differ significantly from the ones in the video. How can I use these commands as well?
